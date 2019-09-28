@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Repository } from '../repository';
 
 @Component({
   selector: 'app-repositories',
@@ -7,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoriesComponent implements OnInit {
 
-  constructor() { }
+  repository: Repository;
+    public searchRepo: string;
+    public resultCount = 12;
+
+    //Search repos function
+    searchRepos() {
+      this.searchRepo = '';
+      this.resultCount = 10;
+      this.getDataFunction();
+
+  }
+
+  
+  constructor(public gitRepoRequest: SearchRequestService ) { }
 
   ngOnInit() {
   }
