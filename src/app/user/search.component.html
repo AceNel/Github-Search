@@ -1,14 +1,21 @@
 <div class="container">
   <ng-progress></ng-progress>
+ 
   <div class="row ">
     <div class="col-md-12">
+      
       <app-search-form (getName)='findUser($event)'></app-search-form>
     </div>
   </div>
+  
   <div class="row">
-    <div class="col-md-7">
-      <div class="table table-striped table-bordered">
-        <h3> {{users.name}}</h3>
+      
+    <div class="col-md-12">
+      <div class="table table-striped table-bordered" >
+        <h3 id="username"> {{users.name}}</h3>
+        <div class=" image-end">
+            <img class="rounded-circle img-fluid mystyle" src="{{users.avatar_url}}" width="50" height="75">
+          </div>
         <table class="table table-striped table-light">
           <tbody>
             <tr>
@@ -36,16 +43,14 @@
         </table>
       </div>
     </div>
-    <div class="col-md-5 image-end">
-      <img src="{{users.avatar_url}}">
-    </div>
+   
   </div>
   <hr>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2 style="color: #056b5b"> User Repositories</h2>
+      <h2 id="username" style="color: #056b38"> User Repositories</h2>
       <div class="table table-striped">
         <table class="table">
           <tbody>

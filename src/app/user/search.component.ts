@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
   users: User;
   repository: Repository;
   public searchRepo: string;
-  public resultCount = 12;
+  public resultCount = 5;
 
 
   //find user function taking a username argument
@@ -37,7 +37,7 @@ export class SearchComponent implements OnInit {
   }
   searchRepos() {
     this.searchRepo = '';
-    this.resultCount = 10;
+    this.resultCount = 5;
 
   }
 
