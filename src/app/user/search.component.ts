@@ -10,7 +10,7 @@ import { SearchRequestService } from '../search-service/search-request.service';
 })
 export class SearchComponent implements OnInit {
 
-  public searchMe = 'AceNel';
+  public searchMe = '';
   public githubUser: string;
 
   users: User;
