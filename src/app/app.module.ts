@@ -13,6 +13,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { SearchComponent } from './user/search.component';
 import { SearchRequestService } from './search-service/search-request.service';
+import { UpperCasePipe } from './upper-case.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchRequestService } from './search-service/search-request.service';
     NavbarComponent,
     SearchFormComponent,
     RepositoriesComponent,
-    SearchComponent
+    SearchComponent,
+    UpperCasePipe 
   ],
   imports: [
     BrowserModule,
